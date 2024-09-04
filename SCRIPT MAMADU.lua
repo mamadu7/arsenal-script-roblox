@@ -11,6 +11,7 @@ local Main = UI:Tab{
     Name = "Main"
 }
 
+-- Adicionando seções para organizar a interface
 local Settings = Main:Divider{
     Name = "Settings"
 }
@@ -171,8 +172,8 @@ ESPSettings:ColorPicker{
 }
 
 -- Botão para fechar a UI
-local Quit = Settings:Button{
-    Name = "MAMADU",
+local Quit = Main:Button{
+    Name = "Close UI",
     Callback = function()
         UI:Quit{
             Message = "Closing UI...",
@@ -180,6 +181,3 @@ local Quit = Settings:Button{
         }
     end
 }
-
--- Função para atualizar o FOV (não implementado diretamente no código; depende do seu método de visualização)
--- Se necessário, você pode adicionar uma implementação personalizada para ajustar o campo de visão.
