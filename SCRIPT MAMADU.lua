@@ -13,15 +13,18 @@ local Main = UI:Tab{
 
 -- Adicionando seções para organizar a interface
 local Settings = Main:Divider{
-    Name = "Settings"
+    Name = "Settings",
+    Position = UDim2.new(0, 0, 0, 10) -- Adicionando espaçamento
 }
 
 local Controls = Main:Divider{
-    Name = "Controls"
+    Name = "Controls",
+    Position = UDim2.new(0, 0, 0, 60) -- Adicionando espaçamento
 }
 
 local ESPSettings = Main:Divider{
-    Name = "ESP Settings"
+    Name = "ESP Settings",
+    Position = UDim2.new(0, 0, 0, 110) -- Adicionando espaçamento
 }
 
 -- Mensagem centralizada
